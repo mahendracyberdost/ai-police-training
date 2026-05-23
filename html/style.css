@@ -1,0 +1,111 @@
+/* Centering the form on the page and setting a nice background */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Styling the heading */
+h2 {
+    color: #1e293b;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Turns the form into a clean white card container */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 450px;
+    box-sizing: border-box;
+}
+
+/* Styling the labels to look neat and bold */
+label {
+    font-weight: 600;
+    color: #475569;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+/* Beautiful modern look for text fields, dropdown, and textarea */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #334155;
+    background-color: #fff;
+    box-sizing: border-box;
+    font-family: inherit;
+    /* Keeps fonts consistent */
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Allows textarea to be resized vertically but not horizontally */
+textarea {
+    resize: vertical;
+}
+
+/* Subtle interactive glow effect when user clicks into a field */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+/* Base style for both buttons */
+button {
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+/* Distinct design for the Submit button */
+button[type="submit"] {
+    background-color: #4f46e5;
+    color: white;
+    margin-right: 8px;
+}
+
+button[type="submit"]:hover {
+    background-color: #4338ca;
+}
+
+/* Subtle click animation for both buttons */
+button:active {
+    transform: scale(0.98);
+}
+
+/* Distinct design for the Reset button */
+button[type="reset"] {
+    background-color: #e2e8f0;
+    color: #475569;
+}
+
+button[type="reset"]:hover {
+    background-color: #cbd5e1;
+}
